@@ -1,0 +1,35 @@
+/* Estilo de las columnas de cabecera */
+.ui-jqgrid .ui-jqgrid-labels th.ui-th-column {
+	color : #ffffff;
+	background-color: #ff8040 !important;
+	background-image: none
+}
+
+/* Estilo del fondo */
+.ui-jqgrid-bdiv {
+	background-image: none
+}
+
+/* Estilo del paginador */
+.ui-jqgrid-pager {
+	background-image: none
+}
+
+/* Estilo del titulo */
+div.ui-jqgrid-view div.ui-jqgrid-titlebar {
+	background-color: #ff8040 !important;
+	background-image: none
+}
+
+/* Estilo de las filas */
+.ui-jqgrid tr.jqgrow td {
+	font-size: 1.0em;
+	height: 15px;
+	padding-top: 0px;
+}
+/* Estilo de las filas (post formatter)*/
+.ui-jqgrid tr.jqgrow td input {
+	padding: 0px;
+	/* height: '50%; */
+	width: 11px;
+}

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	<definition name="baseLayout" template="/WEB-INF/views/baseLayout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/views/header.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/menu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/views/footer.jsp" />
+	</definition>
+	
+	<definition name="errorPage" extends="baseLayout">
+		<put-attribute name="title" value="ERROR" />
+		<put-attribute name="body" value="/WEB-INF/views/errorPage.jsp" />
+	</definition>
+
+	<definition name="inicio" extends="baseLayout">
+		<put-attribute name="title" value="INICIO" />
+	</definition>
+	
+	<definition name="login" extends="baseLayout">
+		<put-attribute name="title" value="LOGIN" />
+		<put-attribute name="body" value="/WEB-INF/views/login.jsp" />
+	</definition>
+	
+	<definition name="buscarUsuarioGrupo" extends="baseLayout">
+		<put-attribute name="title" value="BUSCAR" />
+		<put-attribute name="body" value="/WEB-INF/views/buscarUsuarioGrupo.jsp" />
+	</definition>
+	
+	<definition name="consultaUsuario" extends="baseLayout">
+		<put-attribute name="title" value="CONSULTA" />
+		<put-attribute name="body" value="/WEB-INF/views/consultaUsuario.jsp" />
+	</definition>
+	
+	<definition name="consultaGrupo" extends="baseLayout">
+		<put-attribute name="title" value="CONSULTA" />
+		<put-attribute name="body" value="/WEB-INF/views/consultaGrupo.jsp" />
+	</definition>
+	
+	<definition name="analisisPermisosWAS" extends="baseLayout">
+		<put-attribute name="title" value="ANALISIS WAS" />
+		<put-attribute name="body" value="/WEB-INF/views/analisisPermisosWAS.jsp" />
+	</definition>
+	
+	<!-- DIRECTORIO GLOBAL -->
+	<definition name="directorioGlobal/buscarUsuarioGrupo" extends="baseLayout">
+		<put-attribute name="title" value="CONSULTA DIRECTORIO GLOBAL" />
+		<put-attribute name="body" value="/WEB-INF/views/directorioGlobal/buscarUsuarioGrupo.jsp" />
+	</definition>
+	<definition name="directorioGlobal/consultaUsuario" extends="baseLayout">
+		<put-attribute name="title" value="USUARIO" />
+		<put-attribute name="body" value="/WEB-INF/views/directorioGlobal/consultaUsuario.jsp" />
+	</definition>
+</tiles-definitions>

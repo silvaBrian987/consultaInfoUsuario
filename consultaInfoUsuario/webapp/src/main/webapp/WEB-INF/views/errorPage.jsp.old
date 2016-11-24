@@ -1,0 +1,15 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
+<div class="box border1 box_error">
+	<c:if test="${errores == null}">
+		<h3>No se pudo encontrar el origen del problema</h3>
+	</c:if>
+	<c:if test="${errores != null}">
+		<c:forEach items="${errores}" var="error">
+			<h3>Error: ${error.message}</h3>
+			<c:forEach items="${error.stackTrace}" var="ste">
+				${ste} <br />
+			</c:forEach>
+		</c:forEach>
+	</c:if>
+</div>

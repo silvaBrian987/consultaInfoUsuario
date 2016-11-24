@@ -1,0 +1,12 @@
+<html>
+<head>
+<jsp:include page="/WEB-INF/views/plugins.jsp"></jsp:include>
+<title>Obtener Datos Dominio</title>
+</head>
+<body>
+	<div class="overlay">
+		<jsp:include page="/WEB-INF/views/menu.jsp"></jsp:include>
+		<jsp:include page="/WEB-INF/views/body.jsp"></jsp:include>
+	</div>
+</body>
+</html>
